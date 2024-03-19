@@ -4,6 +4,7 @@
 #include "Pit.h"
 #include "Participant.h"
 
+class Pit;
 class Hero : public Participant{
     public:
         Hero(char = ' ', int = 0, int = 0, string = " ");
