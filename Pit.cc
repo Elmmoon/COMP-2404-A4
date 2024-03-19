@@ -21,7 +21,7 @@ bool Pit::validPos(int row, int col){
 }
 
 bool Pit::withinBounds(int row, int col){
-    return !(row < 0|| col < 0 || row >= MAX_ROW || col >= MAX_COL);
+    return !(row < 1|| col < 1 || row >= MAX_ROW - 1 || col >= MAX_COL - 1);
 }
 
 bool Pit::underLedge(Position* p){
@@ -39,7 +39,7 @@ void Pit::print(PartArray* part, Hero* h1, Hero* h2){
     for (int i = 0; i < part->getSize(); i++){
         Participant* temp = part->get(i);
         if(!temp->isSafe())
-        tempLayout[temp->getRow()][temp->getCol()] = temp->getAvatar();
+            tempLayout[temp->getRow()][temp->getCol()] = temp->getAvatar();
     }
 
     for (; i < MAX_ROW - 1; i++)

@@ -35,5 +35,5 @@ bool Participant::isDead(){
 }
 
 bool Participant::isSafe(){
-    return (pos->getCol() == 1);
+    return (pos->getRow() == 1);
 }
