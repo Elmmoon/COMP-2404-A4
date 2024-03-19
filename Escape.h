@@ -1,3 +1,5 @@
+/*The control class controlling the simulation of the escape from the pit*/
+
 #ifndef ESCAPE_H
 #define ESCAPE_H
 
@@ -22,8 +24,8 @@ class Escape
     void spawnSnorc();
     void moveParticipants();
     Participant* checkForCollision(Participant*);
-    bool isOver();
-    void printOutcome();
+    bool isOver() const;
+    void printOutcome() const;
 };
 
 #endif

@@ -1,3 +1,4 @@
+/*Class that represents the snorcs of the pit*/
 #ifndef SNORC_H
 #define SNORC_H
 

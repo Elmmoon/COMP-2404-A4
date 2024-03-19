@@ -52,6 +52,7 @@ void Hero::incurDamage(Participant* p){
         return;
     health -= p->causeDamage();
     if (health <= 0){
+        health = 0;
         avatar = '+';
         dead = true;
     }
@@ -61,10 +62,10 @@ int Hero::causeDamage(){
     return 0;
 }
 
-string Hero::getName(){
+string Hero::getName() const{
     return name;
 }
 
-int Hero::getHealth(){
+int Hero::getHealth() const{
     return health;
 }

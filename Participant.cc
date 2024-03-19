@@ -14,26 +14,26 @@ Participant::~Participant(){
     delete pos;
 }
 
-bool Participant::collide(Participant* p){
+bool Participant::collide(Participant* p) const{
     return pos->equals(p->pos);
 }
 
-char Participant::getAvatar(){
+char Participant::getAvatar() const{
     return avatar;
 }
 
-int Participant::getRow(){
+int Participant::getRow() const{
     return pos->getRow();
 }
 
-int Participant::getCol(){
+int Participant::getCol() const{
     return pos->getCol();
 }
 
-bool Participant::isDead(){
+bool Participant::isDead() const{
     return dead;
 }
 
-bool Participant::isSafe(){
+bool Participant::isSafe() const{
     return (pos->getRow() == 1);
 }

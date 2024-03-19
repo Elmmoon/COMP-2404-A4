@@ -17,12 +17,12 @@ void PartArray::add(Participant* p){
   elements[size++] = p;
 }
 
-Participant* PartArray::get(int i){
+Participant* PartArray::get(int i) const{
     if (i >= size || i < 0)
         return NULL;
     return elements[i];
 }
 
-int PartArray::getSize(){
+int PartArray::getSize() const{
     return size;
 }

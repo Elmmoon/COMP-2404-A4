@@ -47,14 +47,12 @@ Escape::~Escape(){
 }
 
 void Escape::runEscape(){ 
-  pit->print(&arr, h1, h2);
-  usleep(500000); 
   while (!isOver()){
-    if (random(10) < 9)
+    if (random(100) < SNORC_SPAWN)
       spawnSnorc();
     moveParticipants();
     pit->print(&arr, h1, h2);
-    usleep(500000); 
+    usleep(300000); 
   }
   pit->print(&arr, h1, h2);
   printOutcome();
@@ -86,11 +84,11 @@ Participant* Escape::checkForCollision(Participant* p){
   return NULL;
 }
 
-bool Escape::isOver(){ 
+bool Escape::isOver() const{ 
   return ((h1->isDead()|| h1->isSafe()) && (h2->isDead()|| h2->isSafe()));
 }
 
-void Escape::printOutcome(){
+void Escape::printOutcome() const{
   if (h1->isDead()){
     if (h2->isDead())
       cout << "Both heroes have died..." << endl;

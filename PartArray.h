@@ -1,3 +1,4 @@
+/*Collections class that holds all the participants of the escape*/
 #ifndef PARTARRAY_H
 #define PARTARRAY_H
 
@@ -9,8 +10,8 @@ class PartArray{
     PartArray();
     ~PartArray();
     void add(Participant*);
-    Participant* get(int);
-    int getSize();
+    Participant* get(int) const;
+    int getSize() const;
     
   private:
     Participant* elements[MAX_ARR];

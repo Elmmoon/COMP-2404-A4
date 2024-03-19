@@ -1,3 +1,4 @@
+/*Class that represents the heroes of the escape.*/
 #ifndef HERO_H
 #define HERO_H
 
@@ -12,8 +13,8 @@ class Hero: public Participant{
         virtual void move(Pit*);
         virtual void incurDamage(Participant*);
         virtual int causeDamage();
-        string getName();
-        int getHealth();
+        string getName() const;
+        int getHealth() const;
 
     private:
         string name;
