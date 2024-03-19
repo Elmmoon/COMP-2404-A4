@@ -53,6 +53,7 @@ void Escape::runEscape(){
     moveParticipants();
     pit->print(&arr, h1, h2);
     usleep(300000); 
+    system("clear");
   }
   pit->print(&arr, h1, h2);
   printOutcome();
