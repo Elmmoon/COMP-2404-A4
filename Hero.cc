@@ -18,9 +18,9 @@ void Hero::move(Pit* p){
     int colShift = pos->getCol();
     if (p->underLedge(pos)){
         if (random(2) == 0)
-            rowShift--;
+            colShift--;
         else
-            rowShift++;
+            colShift++;
     }
     else {
         int rand = random(10);
@@ -48,6 +48,8 @@ void Hero::move(Pit* p){
 }
 
 void Hero::incurDamage(Participant* p){
+    if (isDead() || isSafe())
+        return;
     health -= p->causeDamage();
     if (health <= 0){
         avatar = '+';

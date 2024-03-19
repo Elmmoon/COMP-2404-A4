@@ -4,7 +4,6 @@
 #include "defs.h"
 #include "Participant.h"
 
-class Participant;
 class PartArray{
   public:
     PartArray();

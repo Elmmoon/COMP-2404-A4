@@ -31,4 +31,4 @@ random.o: random.cc
 	g++ $(OPT) -c random.cc 
 
 clean:
-	rm -f *.o a4
+	del -f *.o a4.exe

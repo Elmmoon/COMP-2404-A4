@@ -4,6 +4,8 @@ using namespace std;
 #include <string>
 
 #include "Pit.h"
+#include "PartArray.h"
+#include "Hero.h"
 
 Pit::Pit(const char layout[MAX_ROW+1][MAX_COL+1]){
     for (int i = 0; i < MAX_ROW + 1; i++){

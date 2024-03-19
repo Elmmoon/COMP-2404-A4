@@ -3,8 +3,9 @@
 
 #include "defs.h"
 #include "Position.h"
-#include "PartArray.h"
-#include "Hero.h"
+
+class Hero;
+class PartArray;
 
 class Pit{
   public:

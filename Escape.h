@@ -1,9 +1,9 @@
 #ifndef ESCAPE_H
 #define ESCAPE_H
 
+#include "Hero.h"
 #include "Participant.h"
 #include "PartArray.h"
-#include "Hero.h"
 #include "Pit.h"
 
 class Escape

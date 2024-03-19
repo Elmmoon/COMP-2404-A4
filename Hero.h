@@ -1,11 +1,11 @@
 #ifndef HERO_H
 #define HERO_H
 
-#include "Pit.h"
+#include "defs.h"
 #include "Participant.h"
+#include "Pit.h"
 
-class Pit;
-class Hero : public Participant{
+class Hero: public Participant{
     public:
         Hero(char = ' ', int = 0, int = 0, string = " ");
         virtual ~Hero();

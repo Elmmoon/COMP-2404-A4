@@ -54,6 +54,7 @@ void Escape::runEscape(){
       spawnSnorc();
     moveParticipants();
     pit->print(&arr, h1, h2);
+    usleep(300000); 
   }
   pit->print(&arr, h1, h2);
   printOutcome();

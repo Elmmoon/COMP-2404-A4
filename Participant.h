@@ -1,8 +1,8 @@
 #ifndef PARTICIPANT_H
 #define PARTICIPANT_H
 
-#include "Pit.h"
 #include "Position.h"
+#include "Pit.h"
 
 class Participant{
   public:
